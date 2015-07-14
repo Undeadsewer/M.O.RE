@@ -1,0 +1,75 @@
+{
+	"menu_id" : "mel_dec_menu",
+	"parent_menu_id" : "mel_options_menu",
+	"title" : "mel_tog_decapitation",
+	"description" : "mel_tog_decapitation_desc",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_decapitation_opt",
+			"title" : "mel_tog_decapitation",
+			"description" : "mel_tog_decapitation_desc",
+			"callback" : "clbk_mel_tog_decapitation",
+			"value" : "decapitation_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 16,
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "mel_decapitation_opts",
+			"title" : "mel_decapitation_opt",
+			"description" : "mel_decapitation_opt_desc",
+			"callback" : "clbk_mel_decapitation_opt",
+			"items" : [
+				"mel_decapitation_head",
+				"mel_decapitation_all"
+			],
+			"value" : "decapitation_opt",
+			"default_value" : 1,
+		},
+		{
+			"type" : "divider",
+			"size" : 8,
+		},
+		{
+			"type" : "slider",
+			"id" : "mel_decapitation_time_opt",
+			"title" : "mel_decapitation_time",
+			"description" : "mel_decapitation_time_desc",
+			"callback" : "clbk_mel_decapitation_time",
+			"value" : "decapitation_time",
+			"default_value" : 10,
+			"max" : 20,
+			"min" : 1,
+			"step" : 1,
+		},
+		{
+			"type" : "slider",
+			"id" : "mel_decapitation_interval_opt",
+			"title" : "mel_decapitation_interval",
+			"description" : "mel_decapitation_interval_desc",
+			"callback" : "clbk_mel_decapitation_interval",
+			"value" : "decapitation_interval",
+			"default_value" : 0.5,
+			"max" : 1,
+			"min" : 0.1,
+			"step" : 0.05,
+		},
+		{
+			"type" : "divider",
+			"size" : 8,
+		},
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_decapitation_twitch_opt",
+			"title" : "mel_tog_decapitation_twitch",
+			"description" : "mel_tog_decapitation_twitch_desc",
+			"callback" : "clbk_mel_tog_decapitation_twitch",
+			"value" : "twitch_enabled",
+			"default_value" : false,
+		}
+	]
+}

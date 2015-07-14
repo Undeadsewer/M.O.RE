@@ -1,0 +1,49 @@
+{
+	"menu_id" : "mel_hotm_menu",
+	"parent_menu_id" : "mel_options_menu",
+	"title" : "mel_tog_heat",
+	"description" : "mel_tog_heat_desc",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_heat_opt",
+			"title" : "mel_tog_heat",
+			"description" : "mel_tog_heat_desc",
+			"callback" : "clbk_mel_tog_heat",
+			"value" : "heat_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 16,
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "mel_heat_opts",
+			"title" : "mel_heat_opt",
+			"description" : "mel_heat_opt_desc",
+			"callback" : "clbk_mel_heat_opt",
+			"items" : [
+				"mel_blunt_force_head_only",
+				"mel_blunt_force_body_only",
+				"mel_blunt_force_all"
+			],
+			"value" : "heat_opt",
+			"default_value" : 1,
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "mel_heat_place_opts",
+			"title" : "mel_heat_place_opt",
+			"description" : "mel_heat_place_opt_desc",
+			"callback" : "clbk_mel_heat_place_opt",
+			"items" : [
+				"mel_heat_place_head",
+				"mel_heat_place_body",
+				"mel_heat_place_all"
+			],
+			"value" : "heat_place_opt",
+			"default_value" : 1,
+		}
+	]
+}

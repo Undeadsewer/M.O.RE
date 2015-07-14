@@ -1,0 +1,39 @@
+{
+	"menu_id" : "mel_misc_menu",
+	"parent_menu_id" : "mel_options_menu",
+	"title" : "mel_miscellaneous",
+	"description" : "mel_miscellaneous_desc",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_shake_opt",
+			"title" : "mel_tog_shake",
+			"description" : "mel_tog_shake_desc",
+			"callback" : "clbk_mel_tog_shake",
+			"value" : "shaking_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 8,
+		},
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_buzzer_opt",
+			"title" : "mel_tog_buzzer",
+			"description" : "mel_tog_buzzer_desc",
+			"callback" : "clbk_mel_tog_buzzer",
+			"value" : "buzzer_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_buzzer_full_opt",
+			"title" : "mel_tog_buzzer_full",
+			"description" : "mel_tog_buzzer_full_desc",
+			"callback" : "clbk_mel_tog_buzzer_full",
+			"value" : "buzzer_full_enabled",
+			"default_value" : false,
+		}
+	]
+}

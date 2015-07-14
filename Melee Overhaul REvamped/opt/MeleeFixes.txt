@@ -1,0 +1,43 @@
+{
+	"menu_id" : "mel_fi_menu",
+	"parent_menu_id" : "mel_options_menu",
+	"title" : "mel_fix",
+	"description" : "mel_fix_desc",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mel_fix_loop_opt",
+			"title" : "mel_fix_loop",
+			"description" : "mel_fix_loop_desc",
+			"callback" : "clbk_mel_fix_loop",
+			"value" : "loop_fix",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 4,
+		},
+		{
+			"type" : "toggle",
+			"id" : "mel_fix_grinder_opt",
+			"title" : "mel_fix_grinder",
+			"description" : "mel_fix_grinder_desc",
+			"callback" : "clbk_mel_fix_grinder",
+			"value" : "grinder_fix",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 4,
+		},
+		{
+			"type" : "toggle",
+			"id" : "mel_fix_interact_opt",
+			"title" : "mel_fix_interact",
+			"description" : "mel_fix_interact_desc",
+			"callback" : "clbk_mel_fix_interact",
+			"value" : "interact_fix",
+			"default_value" : false,
+		}
+	]
+}

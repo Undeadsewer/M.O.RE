@@ -1,0 +1,33 @@
+{
+	"menu_id" : "mel_call_menu",
+	"parent_menu_id" : "mel_options_menu",
+	"title" : "mel_tog_callout",
+	"description" : "mel_tog_callout_desc",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_callout_opt",
+			"title" : "mel_tog_callout",
+			"description" : "mel_tog_callout_desc",
+			"callback" : "clbk_mel_tog_callout",
+			"value" : "callout_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 8,
+		},
+		{
+			"type" : "slider",
+			"id" : "mel_callout_chance_opt",
+			"title" : "mel_callout_chance",
+			"description" : "mel_callout_chance_desc",
+			"callback" : "clbk_mel_callout_chance",
+			"value" : "callout_chance",
+			"default_value" : 0.7,
+			"max" : 1,
+			"min" : 0.0,
+			"step" : 0.1,
+		}
+	]
+}

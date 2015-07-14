@@ -1,0 +1,73 @@
+{
+	"menu_id" : "mel_bft_menu",
+	"parent_menu_id" : "mel_options_menu",
+	"title" : "mel_tog_blunt_force",
+	"description" : "mel_tog_blunt_force_desc",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_blunt_force_opt",
+			"title" : "mel_tog_blunt_force",
+			"description" : "mel_tog_blunt_force_desc",
+			"callback" : "clbk_mel_tog_blunt_force",
+			"value" : "blunt_force_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 16,
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "mel_blunt_force_opts",
+			"title" : "mel_blunt_force_opt",
+			"description" : "mel_blunt_force_opt_desc",
+			"callback" : "clbk_mel_blunt_force_opt",
+			"items" : [
+				"mel_blunt_force_head_only",
+				"mel_blunt_force_body_only",
+				"mel_blunt_force_all"
+			],
+			"value" : "blunt_force_opt",
+			"default_value" : 1,
+		},
+		{
+			"type" : "divider",
+			"size" : 8,
+		},
+		{
+			"type" : "slider",
+			"id" : "mel_force_mul_opt",
+			"title" : "mel_force_mul",
+			"description" : "mel_force_mul_desc",
+			"callback" : "clbk_mel_force",
+			"value" : "force_mul",
+			"default_value" : 1,
+			"max" : 20,
+			"min" : 0,
+			"step" : 0.5,
+		},
+		{
+			"type" : "divider",
+			"size" : 8,
+		},
+		{
+			"type" : "toggle",
+			"id" : "mel_force_superman_opt",
+			"title" : "mel_tog_force_superman",
+			"description" : "mel_tog_force_superman_desc",
+			"callback" : "clbk_mel_tog_superman",
+			"value" : "superman_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "toggle",
+			"id" : "mel_blunt_force_hit_sound_opt",
+			"title" : "mel_blunt_force_hit_sound",
+			"description" : "mel_blunt_force_hit_sound_desc",
+			"callback" : "clbk_mel_blunt_force_hit_sound",
+			"value" : "blunt_force_hit_sound",
+			"default_value" : false,
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"menu_id" : "mel_sm_menu",
+	"parent_menu_id" : "mel_options_menu",
+	"title" : "mel_tog_silly_weapon",
+	"description" : "mel_tog_silly_weapon_desc",
+	"items" : [
+		{
+			"type" : "toggle",
+			"id" : "mel_tog_silly_weapon_opt",
+			"title" : "mel_tog_silly_weapon",
+			"description" : "mel_tog_silly_weapon_desc",
+			"callback" : "clbk_mel_tog_silly_weapon",
+			"value" : "silly_weapon_enabled",
+			"default_value" : false,
+		},
+		{
+			"type" : "divider",
+			"size" : 16,
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "mel_silly_weapon_opts",
+			"title" : "mel_silly_weapon_opt",
+			"description" : "mel_silly_weapon_opt_desc",
+			"callback" : "clbk_mel_silly_weapon_opt",
+			"items" : [
+				"mel_silly_weapon_gun",
+				"mel_silly_weapon_grenade",
+				"mel_silly_weapon_mask",
+				"mel_silly_weapon_invisible"
+			],
+			"value" : "silly_weapon_opt",
+			"default_value" : 1,
+		}
+	]
+}
